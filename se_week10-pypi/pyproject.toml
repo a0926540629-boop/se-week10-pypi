@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "se-week10-pkg-111410535"
+version = "0.0.1"
+authors = [
+  { name="辛承燁", email="a0926540629@gmail.com" }
+]
+description = "軟體工程第十週作業，示範套件"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file="LICENSE" }
+
+[project.urls]
+"Homepage" = "https://github.com/a0926540629-boop/se-week10-pypi"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mypkg"]
